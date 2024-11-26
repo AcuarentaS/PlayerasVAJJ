@@ -7,16 +7,16 @@ body {
 }
 
 @media (max-width: 600px) {
-    #logo { width: 50vw; } #BtnComprarAhora { width: 10vw; }
-    #playera1 { width: 20vw; }
+    #logo { width: 50vw; } #BtnComprarAhora { width: 20vw; }
+    #playera1 { width: 50vw; }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-    #logo { width: 50vw; } #BtnComprarAhora { width: 10vw; }
-    #playera1 { width: 20vw; }
+    #logo { width: 50vw; } #BtnComprarAhora { width: 20vw; }
+    #playera1 { width: 50vw; }
 }
 @media (min-width: 1025px) {
-    #logo { width: 50vw; } #BtnComprarAhora { width: 10vw; }
-    #playera1 { width: 20vw; }
+    #logo { width: 50vw; } #BtnComprarAhora { width: 20vw; }
+    #playera1 { width: 50vw; }
 }
 
 #logo {
