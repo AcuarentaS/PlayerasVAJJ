@@ -8,28 +8,46 @@ body {
 
 @media (max-width: 600px) {
     #logo { top: 10vw; width: 90vw; }
-    #BtnComprarAhora { bottom: 20%; width: 39vw; }
-    #playera1 { top: 20vw; left: 57%; width: 70vw; }
-    #playera2 { top: 85vw; left: -27%; width: 70vw; }
-    #playera3 { top: 150vw; left: 57%; width: 70vw; }
-    #playera4 { top: 215vw; left: -27%; width: 70vw; }
+    #BtnComprarAhora { bottom: 20%; width: 42vw; }
+    #playera1 { top: 0vw; left: 59%; width: 80vw; }
+    #playera2 { top: 60vw; left: -40%; width: 80vw; }
+    #playera3 { top: 120vw; left: 59%; width: 80vw; }
+    #playera4 { top: 180vw; left: -40%; width: 80vw; }
+    #playera5 { top: 240vw; left: 59%; width: 80vw; }
+    #playera6 { top: 300vw; left: -40%; width: 80vw; }
+    #playera7 { top: 360vw; left: 59%; width: 80vw; }
+    #playera8 { top: 420vw; left: -40%; width: 80vw; }
+
+    #playera9 { top: 0vw; left: 59%; width: 80vw; }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
     #logo { top: 0vw; width: 90vw; }
     #BtnComprarAhora { bottom: 20%; width: 39vw; }
-    #playera1 { top: 20vw; left: 57%; width: 70vw; }
-    #playera2 { top: 85vw; left: -27%; width: 70vw; }
-    #playera3 { top: 150vw; left: 57%; width: 70vw; }
-    #playera4 { top: 215vw; left: -27%; width: 70vw; }
+    #playera1 { top: 0vw; left: 59%; width: 80vw; }
+    #playera2 { top: 60vw; left: -40%; width: 80vw; }
+    #playera3 { top: 120vw; left: 59%; width: 80vw; }
+    #playera4 { top: 180vw; left: -40%; width: 80vw; }
+    #playera5 { top: 240vw; left: 59%; width: 80vw; }
+    #playera6 { top: 300vw; left: -40%; width: 80vw; }
+    #playera7 { top: 360vw; left: 59%; width: 80vw; }
+    #playera8 { top: 420vw; left: -40%; width: 80vw; }
+
+    #playera9 { top: 0vw; left: 59%; width: 80vw; }
 }
 
 @media (min-width: 1025px) {
-    #logo { top: 0vw; width: 50vw; }
+    #logo { top: 0vw; width: 45vw; }
     #BtnComprarAhora { bottom: 8vw; width: 15vw; }
-    #playera1 { top: 4vw; left: 30vw; width: 25vw; }
-    #playera2 { top: 4vw; left: 45vw; width: 25vw; }
-    #playera3 { top: 26vw; left: 30vw; width: 25vw; }
-    #playera4 { top: 26vw; left: 45vw; width: 25vw; }
+    #playera1 { top: 0vw; left: 30vw; width: 40vw; }
+    #playera2 { top: 0vw; left: 30vw; width: 40vw; }
+    #playera3 { top: 40vw; left: 30vw; width: 40vw; }
+    #playera4 { top: 40vw; left: 30vw; width: 40vw; }
+    #playera5 { top: 80vw; left: 30vw; width: 40vw; }
+    #playera6 { top: 80vw; left: 30vw; width: 40vw; }
+    #playera7 { top: 120vw; left: 30vw; width: 40vw; }
+    #playera8 { top: 120vw; left: 30vw; width: 40vw; }
+
+    #playera9 { top: -10vw; left: 30vw; width: 40vw; }
 }
 
 @keyframes aparecerFijo { from { opacity: 0; } to { opacity: 1; } }
@@ -67,7 +85,7 @@ body {
     top: 0;
     left: 0;
     height: 10vh;
-    width: 200px;
+    width: 1vw;
     background-color: #f0f0f0;
 }
 
@@ -112,18 +130,23 @@ body {
     to { opacity: 1; transform: translateX(60%); }
 }
 
-#playera1, #playera2 {
+#playera1, #playera2, #playera3, #playera4, #playera5, #playera6, #playera7, #playera8 {
     border-radius: 15px;
     position: absolute;
     opacity: 0;
 }
-#playera3, #playera4 {
+#playera9 {
     border-radius: 15px;
     position: absolute;
     opacity: 0;
 }
+
 #playera1 { animation: aparecerIzquierdaDerecha 2s forwards; }
 #playera2 { animation: aparecerDerechaIzquierda 2s forwards; }
 #playera3 { animation: aparecerIzquierdaDerecha 2s forwards; }
 #playera4 { animation: aparecerDerechaIzquierda 2s forwards; }
-#playera4 { animation: aparecerDerechaIzquierda 2s forwards; }
+#playera5 { animation: aparecerIzquierdaDerecha 2s forwards; }
+#playera6 { animation: aparecerDerechaIzquierda 2s forwards; }
+#playera7 { animation: aparecerIzquierdaDerecha 2s forwards; }
+#playera8 { animation: aparecerDerechaIzquierda 2s forwards; }
+#playera9 { animation: aparecerIzquierdaDerecha 2s forwards; }
