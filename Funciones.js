@@ -11,15 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const imagen2 = document.getElementById('playera2');
     const imagen3 = document.getElementById('playera3');
     const imagen4 = document.getElementById('playera4');
+    const imagen5 = document.getElementById('playera5');
+    const imagen6 = document.getElementById('playera6');
+    const imagen7 = document.getElementById('playera7');
+    const imagen8 = document.getElementById('playera8');
 
-    const limpiarPantalla = function() {
-        document.querySelectorAll('body > *').forEach(el => el.remove());
-    };
+    const imagen9 = document.getElementById('playera9');
 
+    const limpiarPantalla = function() { document.querySelectorAll('body > *').forEach(el => el.remove()); };
     logo.style.animation = 'aparecerDesdeLaIzquierda 2.5s forwards';
-    logo.addEventListener('animationend', function() {
-        BtnComprarAhora.style.animation = 'aparecerFijo 2s forwards';
-    });
+    logo.addEventListener('animationend', function() { BtnComprarAhora.style.animation = 'aparecerFijo 2s forwards'; });
 
     BtnComprarAhora.addEventListener('click', function() {
         limpiarPantalla();
@@ -29,36 +30,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
     opcion1.addEventListener('click', function() {
         limpiarPantalla();
-        document.body.appendChild(menuPrincipal);
+        setTimeout(function() { document.body.appendChild(menuPrincipal); }, 100);
+        menuPrincipal.style.animation = 'aparecerFijo 2s forwards';
         document.body.appendChild(imagen1);
         document.body.appendChild(imagen2);
         document.body.appendChild(imagen3);
         document.body.appendChild(imagen4);
+        document.body.appendChild(imagen5);
+        document.body.appendChild(imagen6);
+        document.body.appendChild(imagen7);
+        document.body.appendChild(imagen8);
         imagen1.classList.remove('oculto');
         imagen2.classList.remove('oculto');
         imagen3.classList.remove('oculto');
         imagen4.classList.remove('oculto');
+        imagen5.classList.remove('oculto');
+        imagen6.classList.remove('oculto');
+        imagen7.classList.remove('oculto');
+        imagen8.classList.remove('oculto');
     });
     opcion2.addEventListener('click', function() {
         limpiarPantalla();
-        document.body.appendChild(menuPrincipal);
+        setTimeout(function() { document.body.appendChild(menuPrincipal); }, 100);
+        menuPrincipal.style.animation = 'aparecerFijo 2s forwards';
+        document.body.appendChild(imagen9);
+        imagen9.classList.remove('oculto');
     });
     opcion3.addEventListener('click', function() {
         limpiarPantalla();
-        document.body.appendChild(menuPrincipal);
+        setTimeout(function() { document.body.appendChild(menuPrincipal); }, 100);
+        menuPrincipal.style.animation = 'aparecerFijo 2s forwards';
     });
     opcion4.addEventListener('click', function() {
         limpiarPantalla();
-        document.body.appendChild(menuPrincipal);
+        setTimeout(function() { document.body.appendChild(menuPrincipal); }, 100);
+        menuPrincipal.style.animation = 'aparecerFijo 2s forwards';
     });
     opcion5.addEventListener('click', function() {
         limpiarPantalla();
-        document.body.appendChild(menuPrincipal);
+        setTimeout(function() { document.body.appendChild(menuPrincipal); }, 100);
+        menuPrincipal.style.animation = 'aparecerFijo 2s forwards';
     });
 });
-
-
-
-
-
-
