@@ -12,7 +12,7 @@ body, header, section, div {
 }
 
 .section {
-    border: 7px solid #026;
+    border: 10px solid #026;
     border-radius: 7px;
     width: 100vw;
     height: 100vh;
@@ -25,6 +25,7 @@ body, header, section, div {
     display: flex;
     justify-content: start;
     align-items: center;
+    animation: izquierdaDerecha 3s;
 }
 .section__left-logo {
     max-width: 70%;
@@ -36,9 +37,49 @@ body, header, section, div {
     display: flex;
     justify-content: end;
     align-items: center;
+    animation: derechaIzquierda 3s;
 }
 .section__rigth-logo {
     max-width: 80%;
     max-height: 100%;
     margin-right: 20px;
+}
+.section__huella-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    animation: aparecer 3s ease-in-out 3s both;
+}
+.section__huella {
+    max-width: 80%;
+    max-height: 100%;
+}
+
+@keyframes izquierdaDerecha {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes derechaIzquierda {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
