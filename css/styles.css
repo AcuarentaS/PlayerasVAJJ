@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #025;
 }
-body, header, section, div {
+body, header, section, div, a {
     margin: 0;
     padding: 0;
 }
@@ -45,13 +45,13 @@ body, header, section, div {
     margin-right: 20px;
 }
 .section__huella-container {
-    height: 100px;
+    height: 120px;
     display: flex;
     justify-content: center;
     animation: aparecer 3s ease-in-out 3s both;
 }
 .section__huella {
-    max-width: 80%;
+    max-width: 90%;
     max-height: 100%;
 }
 
