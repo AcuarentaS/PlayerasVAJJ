@@ -45,7 +45,7 @@ body, header, section, div, a {
     margin-right: 20px;
 }
 .section__huella-container {
-    height: 110px;
+    height: 100px;
     display: flex;
     justify-content: center;
     animation: aparecer 3s ease-in-out 3s both;
