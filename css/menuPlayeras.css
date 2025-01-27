@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #bef4;
+    font-family: sans-serif;
+    color: #026;
+    display: grid;
+    grid-template-rows: 55px auto auto;
+    height: 100vh;
+    width: 100vw;
+}
+body, header, div, nav, main, footer, a, li, label, ul, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------HEADER */
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__checkbox {
+    display: none;
+}
+.header__dropdown-item {
+    font-size: 50px;
+    font-weight: 500;
+    color: #026;
+    margin-left: 40px;
+}
+.header__logo-container {
+    max-width: 120px;
+}
+.header__logo {
+    max-width: 100%;
+}
+.header__nav {
+    display: none;
+    background-color: #fff;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+}
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.header__nav-item {
+    transition: scale 0.2s ease-in-out;
+    &:hover, :active {
+        scale: 122%;
+    }
+}
+.header__nav-item a {
+    color: #026;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &:not(:is(:hover, :active)) {
+        text-decoration: none;
+    }
+}
+.header__checkbox:checked ~ .header__nav {
+    display: block;
+}
+.header__nav-item-icono-playerita, .header__nav-item-icono-gorrita {
+    width: 70px;
+}
+.header__nav-item-icono-sudaderita, .header__nav-item-icono-contactanos {
+    width: 50px;
+}
+.header__nav-item-icono-tacita {
+    width: 60px;
+}
+.header__nav-item-icono-personaliza {
+    width: 85px;
+}
+.header__nav-item-icono-acercaDeNosotros {
+    width: 100px;
+}

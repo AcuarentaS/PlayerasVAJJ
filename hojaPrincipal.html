@@ -11,88 +11,61 @@
         <link rel="stylesheet" href="css/hojaPrincipal.css">
     </head>
     <body>
+        <dialog open class="dialog__modal-container" id="modalContainer">
+            <div class="dialog__info-container">
+                <h2>BIENVENIDO AL CATÁLOGO EN LÍNEA DE PRODUCTOS VAJJ</h2>
+            </div>
+            <button class="dialog__btn-close-modal" id="btnCloseModal">X</button>
+        </dialog>
         <header class="header">
-            <input class="header__checkbox" type="checkbox" id="toggle-dropdown">
-            <label class="header__dropdown-item" for="toggle-dropdown" tabindex="0" aria-label="botón de menú desplegable">=</label>
             <div class="header__logo-container">
                 <img class="header__logo" src="img/background/letrasVAJJ_azul.png" alt="logo v a j j">
             </div>
-            <nav class="header__nav" aria-label="menú principal">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="#" aria-label="playeras">Playeras
-                            <img class="header__nav-item-icono-playerita" src="img/iconos/iconoPlayerita.png" alt="Icono de playeras">
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" aria-label="gorras">Gorras
-                            <img class="header__nav-item-icono-gorrita" src="img/iconos/iconoGorrita.png" alt="Icono de gorras">
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" aria-label="sudaderas">Sudaderas
-                            <img class="header__nav-item-icono-sudaderita" src="img/iconos/iconoSudaderita.png" alt="Icono de sudaderas">
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" aria-label="tazas">Tazas
-                            <img class="header__nav-item-icono-tacita" src="img/iconos/iconoTacita.png" alt="Icono de tazas">
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" aria-label="personaliza tu producto">Personaliza tu producto
-                            <img class="header__nav-item-icono-personaliza" src="img/iconos/iconoPersonaliza.png" alt="Icono de personaliza tu producto">
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" aria-label="acerca de nosotros">Acerca de nosotros
-                            <img class="header__nav-item-icono-acercaDeNosotros" src="img/iconos/iconoAcercaDeNosotros.png" alt="Icono de acerca de nosotros">
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#" aria-label="contáctanos">Contáctanos
-                            <img class="header__nav-item-icono-contactanos" src="img/iconos/iconoContactanos.png" alt="Icono de contáctanos">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </header>
         <main class="main">
+            <h1>CATÁLOGO EN LÍNEA DE PRODUCTOS VAJJ</h1>
             <nav class="main__nav" aria-label="menú principal">
-                <div class="main__nav-item">
-                    <a href="#" aria-label="playeras">Playeras
+                <div class="main__nav-item">   
+                    <label class="main__dropdown-item">Playeras
+                        <input class="main__checkbox" type="checkbox">
                         <img class="main__nav-item-icono" src="img/iconos/iconoPlayerita.png" alt="Icono de playeras">
-                    </a>
+                    </label>
                 </div>
                 <div class="main__nav-item">
-                    <a href="#" aria-label="sudaderas">Sudaderas
+                    <label class="main__dropdown-item">Sudaderas
+                        <input class="main__checkbox" type="checkbox">
                         <img class="main__nav-item-icono" src="img/iconos/iconoSudaderita.png" alt="Icono de sudaderas">
-                    </a>
+                    </label>
                 </div>
                 <div class="main__nav-item">
-                    <a href="#" aria-label="gorras">Gorras
-                        <img class="main__nav-item-icono" src="img/iconos/iconoGorrita.png" alt="Icono de gorras">
-                    </a>
+                    <label class="main__dropdown-item">Gorras
+                        <input class="main__checkbox" type="checkbox">
+                        <img class="main__nav-item-icono" src="img/iconos/iconoGorrita.png" alt="Icono de sudaderas">
+                    </label>
                 </div>
                 <div class="main__nav-item">
-                    <a href="#" aria-label="tazas">Tazas
-                        <img class="main__nav-item-icono" src="img/iconos/iconoTacita.png" alt="Icono de tazas">
-                    </a>
+                    <label class="main__dropdown-item">Tazas
+                        <input class="main__checkbox" type="checkbox">
+                        <img class="main__nav-item-icono" src="img/iconos/iconoTacita.png" alt="Icono de sudaderas">
+                    </label>
                 </div>
                 <div class="main__nav-item">
-                    <a href="#" aria-label="personaliza tu producto">Personaliza tu producto
-                        <img class="main__nav-item-icono" src="img/iconos/iconoPersonaliza.png" alt="Icono de personaliza tu producto">
-                    </a>
+                    <label class="main__dropdown-item">Personaliza tu<br>producto
+                        <input class="main__checkbox" type="checkbox">
+                        <img class="main__nav-item-icono" src="img/iconos/iconoPersonaliza.png" alt="Icono de sudaderas">
+                    </label>
                 </div>
                 <div class="main__nav-item">
-                    <a href="#" aria-label="acerca de nosotros">Acerca de nosotros
-                        <img class="main__nav-item-icono" src="img/iconos/iconoAcercaDeNosotros.png" alt="Icono de acerca de nosotros">
-                    </a>
+                    <label class="main__dropdown-item">Acerca de nosotros
+                        <input class="main__checkbox" type="checkbox">
+                        <img class="main__nav-item-icono" src="img/iconos/iconoAcercaDeNosotros.png" alt="Icono de sudaderas">
+                    </label>
                 </div>
                 <div class="main__nav-item">
-                    <a href="#" aria-label="contáctanos">Contáctanos
-                        <img class="main__nav-item-icono" src="img/iconos/iconoContactanos.png" alt="Icono de contáctanos">
-                    </a>
+                    <label class="main__dropdown-item">Contáctanos
+                        <input class="main__checkbox" type="checkbox">
+                        <img class="main__nav-item-icono" src="img/iconos/iconoContactanos.png" alt="Icono de sudaderas">
+                    </label>
                 </div>
             </nav>
         </main>
@@ -100,11 +73,12 @@
             <div class="footer__container">
                 <p>&copy; 2025 VAJJ. Todos los derechos reservados.</p>
                 <p>Vende: Playeras, Tazas, Gorras, Sudaderas</p>
-                <p>Contacto: info@vajj.com | Teléfono: +52 55 1234 5678</p>
-                <a href="https://www.facebook.com/vajj">Facebook</a>
-                <a href="https://www.twitter.com/vajj">Twitter</a>
-                <a href="https://www.instagram.com/vajj">Instagram</a>
+                <p>Contacto: info@vajj.com | Teléfono: +52 xx xxxx xxxx</p>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
             </div>
-          </footer> 
+          </footer>
+          <script src="js/hojaPrincipal.js"></script>
     </body>
 </html>
