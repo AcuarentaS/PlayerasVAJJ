@@ -50,6 +50,8 @@ h1 {
     font-size: 16px;
     font-weight: 100;
     margin-top: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #0267;
 }
 .main__nav {
     display: grid;
@@ -65,7 +67,8 @@ h1 {
 
 
 .main__nav-details-container {
-    box-shadow: 0 0 10px 1px #0265;
+    box-shadow: 0 0 10px 1px #00f5;
+    background-color: #fff;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -107,23 +110,51 @@ h1 {
     }
 }
 /* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
 
 
 /* -----------------------------DETAILS CONTENT */
 
 
-.main__nav-details-content-container {
+.main__nav-details-section-container {
     border: none;
-    border: 1px solid #00f;
     background-color: #fff;
     border-radius: 10px;
     position: absolute;
     z-index: 1;
     left: 0;
 }
-.main__nav-details-content-icono {
-    max-height: 100px;
+.main__nav-details-section-content-container {
+    border: 2px solid #f00a;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 30px;
 }
+.main__nav-details-section-content {
+    box-shadow: 0 0 10px 1px #f005;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color:#026;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    transition: scale 0.2s ease-in-out;
+    &:hover, :active {
+        scale: 120%;
+    }
+}
+.main__nav-details-section-icono {
+    width: 100px;
+}
+
 
 
 /* -----------------------------TACHADOS Y BLOQUEADOS */
@@ -137,6 +168,7 @@ h1 {
     height: 100%;
     position: absolute;
 }
+/* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
 
 
