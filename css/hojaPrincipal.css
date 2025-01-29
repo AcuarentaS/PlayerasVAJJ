@@ -63,7 +63,7 @@ h1 {
 }
 
 
-/* -----------------------------DETAILS SUMMARY */
+/* -----------------------------------------------DETAILS 1 */
 
 
 .main__nav-details-container {
@@ -84,6 +84,7 @@ h1 {
     text-align: center;
     line-height: 40px;
     font-size: 12px;
+    cursor: pointer;
     /* transition: scale 0.2s ease-in-out;
     &:hover, :active {
         scale: 120%;
@@ -104,18 +105,13 @@ h1 {
     text-align: center;
     line-height: 40px;
     font-size: 12px;
+    cursor: pointer;
     transition: scale 0.2s ease-in-out;
     &:hover, :active {
         scale: 120%;
     }
 }
 /* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-
-
-/* -----------------------------DETAILS CONTENT */
-
-
 .main__nav-details-section-container {
     border: none;
     background-color: #fff;
@@ -131,30 +127,72 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 40px;
-    gap: 30px;
-}
-.main__nav-details-section-content {
-    box-shadow: 0 0 10px 1px #f005;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    color:#026;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
-    transition: scale 0.2s ease-in-out;
-    &:hover, :active {
-        scale: 120%;
-    }
+    gap: 25px;
 }
 .main__nav-details-section-icono {
     width: 80px;
 }
 
+
+/* ----------------------------------------------DETAILS 2 */
+
+
+.main__nav-details-2-container {
+    box-shadow: 0 0 10px 1px #f005;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+}
+.main__nav-details-2-summary-container {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    gap: 5px;
+    cursor: pointer;
+    transition: scale 0.2s ease-in-out;
+    &:hover, :active {
+        scale: 120%;
+    }
+}
+.main__nav-details-2-summary-icono {
+    width: 80px;
+}
+.main__nav-details-section-2-container {
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    left: -78px;
+    top: -95px;
+}
+.main__nav-details-section-2-content-container {
+    border: 2px solid #f00a;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+.main__nav-details-section-2-content {
+    box-shadow: 0 0 10px 1px #f005;
+    border-radius: 50%;
+    padding: 10px 2px 10px 2px;
+    transition: scale 0.2s ease-in-out;
+    &:hover, :active {
+        scale: 120%;
+    }
+}
+.main__nav-details-section-2-icono {
+    width: 90px;
+}
 
 
 /* -----------------------------TACHADOS Y BLOQUEADOS */
