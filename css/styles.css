@@ -59,6 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 40px;
 }
 .main__nav-list {
     min-width: 100%;
@@ -90,7 +91,7 @@ body {
 }
 .main__nav-icono {
     max-width: 100%;
-    height: 60px;
+    height: 40px;
 }
 
 
