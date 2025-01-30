@@ -52,15 +52,19 @@ body {
 }
 .main__nav {
     border: 3px solid #f00;
-    min-width: 90vw;
-    padding: 50px 20px;
+    min-width: 95vw;
+    padding: 50px 10px;
 }
 .main__nav-list {
-    border: 2px solid #00f;
+    border: 1px solid #00f;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 .main__nav-item {
+    box-shadow: 0 0 10px 5px #0265;
+    border-radius: 15px;
     border: 1px solid #0f0;
     list-style: none;
 }
