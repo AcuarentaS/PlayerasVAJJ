@@ -8,9 +8,9 @@ body {
     font-family: sans-serif;
     color: #026;
     display: grid;
-    grid-template-rows: 55px auto auto;
-    height: 100vh;
+    grid-template-rows: 50px 1fr 180px;
     width: 100vw;
+    height: 100vh;
 }
 
 
@@ -25,6 +25,7 @@ body {
 }
 .header__logo-container {
     max-width: 120px;
+    display: flex;
 }
 .header__logo {
     max-width: 100%;
@@ -35,49 +36,61 @@ body {
 
 
 .main {
-    border: 2px solid #026;
+    border-top: 2px solid #026;
+    border-bottom: 2px solid #026;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 .main h1 {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-wrap: balance;
     text-shadow: 0 0 10px #026c;
+    padding: 10px;
 }
 .main__nav {
-    border: 3px solid #f00;
-    min-width: 95vw;
-    padding: 50px 10px;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main__nav-list {
-    border: 1px solid #00f;
+    min-width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(100px, 400px));
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    padding: 20px;
 }
 .main__nav-item {
-    box-shadow: 0 0 10px 5px #0265;
+    box-shadow: 0 0 10px 1px #0265;
+    background-color: #fff;
     border-radius: 15px;
-    border: 1px solid #0f0;
     list-style: none;
+    transition: scale 0.2s ease-in-out;
+    &:hover, :active {
+        scale: 115%;
+    }
 }
 .main__nav-item a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
+    gap: 10px;
+    color: #026;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    padding: 10px;
 }
 .main__nav-icono {
     max-width: 100%;
-    height: 80px;
+    height: 60px;
 }
 
 
@@ -93,6 +106,7 @@ body {
 }
 .footer__container {
     text-align: center;
-    font-size: 12px;
-    padding: 20px;
+    line-height: 2;
+    font-size: 14px;
+    padding: 5px;
 }
