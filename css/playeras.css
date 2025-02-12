@@ -7,8 +7,8 @@ body {
     font-family: sans-serif;
     display: grid;
     grid-template-rows: 50px 1fr 180px;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    height: auto;
 }
 
 
@@ -38,9 +38,9 @@ body {
 }
 .header__summary img {
     width: 100%;
-    transition: scale 0.2s ease-in-out;
-    &:hover, :active {
-        scale: 120%;
+    transition: transform 0.2s ease-in-out;
+    &:active {
+        transform: scale(120%);
     }
 }
 .header__nav {
@@ -63,9 +63,9 @@ body {
     gap: 30px;
 }
 .header__nav-item {
-    transition: scale 0.2s ease-in-out;
-    &:hover, :active {
-        scale: 120%;
+    transition: transform 0.2s ease-in-out;
+    &:active {
+        transform: scale(120%);
     }
 }
 .header__nav-icono {
@@ -91,9 +91,9 @@ body {
 }
 .main__nav-icono {
     max-height: 23px;
-    transition: scale 0.2s ease-in-out;
-    &:hover, :active {
-        scale: 110%;
+    transition: transform 0.2s ease-in-out;
+    &:active {
+        transform: scale(110%);
     }
 }
 .main__nav-list {
@@ -149,12 +149,12 @@ body {
     height: 21px;
 }
 .main__section{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     padding: 60px 30px;
-    gap: 60px 30px;
+    gap: 60px 0;
 }
 .main__article {
     box-shadow: 0 0 5px #500;
@@ -180,10 +180,10 @@ body {
     align-items: center;
 }
 .main__article img {
-    max-width: 150px;
-    transition: scale 0.2s ease-in-out;
+    max-width: 200px;
+    transition: transform 0.2s ease-in-out;
     &:active {
-        scale: 220%;
+        transform: scale(220%);
     }
 }
 .main__article p {
