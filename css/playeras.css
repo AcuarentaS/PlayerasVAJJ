@@ -180,7 +180,7 @@ body {
     align-items: center;
 }
 .main__article img {
-    max-width: 200px;
+    max-width: 150px;
     transition: scale 0.2s ease-in-out;
     &:active {
         scale: 220%;
