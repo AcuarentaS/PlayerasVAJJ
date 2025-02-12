@@ -9,6 +9,17 @@
 //     });
 // });
 
+document.querySelectorAll('.main__article img').forEach(img => {
+    if ('ontouchstart' in window || navigator.maxTouchPoints) {
+      img.addEventListener('touchstart', () => img.classList.add('hover-scale'));
+      img.addEventListener('touchend', () => img.classList.remove('hover-scale'));
+    } else {
+      img.addEventListener('mouseover', () => img.classList.add('hover-scale'));
+      img.addEventListener('mouseout', () => img.classList.remove('hover-scale'));
+    }
+});
+  
+
 /*
 document.addEventListener("DOMContentLoaded", () => {
     const checkbox = document.getElementById("talla_S");
