@@ -9,16 +9,21 @@
 //     });
 // });
 
+
 document.querySelectorAll('.main__article img').forEach(img => {
-    if ('ontouchstart' in window || navigator.maxTouchPoints) {
-      img.addEventListener('touchstart', () => img.classList.add('hover-scale'));
-      img.addEventListener('touchend', () => img.classList.remove('hover-scale'));
-    } else {
-      img.addEventListener('mouseover', () => img.classList.add('hover-scale'));
-      img.addEventListener('mouseout', () => img.classList.remove('hover-scale'));
-    }
+  img.addEventListener('touchstart', (e) => {
+      e.preventDefault(); // Prevenir el comportamiento por defecto (abrir menú)
+      img.classList.add('active');
+  });
+  img.addEventListener('touchend', (e) => {
+      e.preventDefault(); // Prevenir el comportamiento por defecto (abrir menú)
+      img.classList.remove('active');
+  });
+  img.addEventListener('contextmenu', (e) => {
+      e.preventDefault(); // Prevenir el menú contextual
+  });
 });
-  
+
 
 /*
 document.addEventListener("DOMContentLoaded", () => {
