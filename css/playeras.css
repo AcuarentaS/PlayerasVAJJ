@@ -216,16 +216,16 @@ body {
     box-shadow: 0 0 5px #a00;
     border-radius: 20px;
     position: absolute;
-    max-width: 350px;
-    min-height: 316px;
+    max-width: 316px;
+    min-height: 290px;
     top: 100px;
     z-index: 1;
 }
 .main__article-details-img-front {   
-    left: 0px;
+    left: -10px;
 }
 .main__article-details-img-back {
-    left: -150px;
+    left: -148px;
 }
 .main__article footer {
     font-size: 12px;

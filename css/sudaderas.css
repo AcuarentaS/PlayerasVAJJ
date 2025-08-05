@@ -85,9 +85,6 @@ body {
     border-top: 2px solid #fa1;
     border-bottom: 2px solid #fa1;
     padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .main__nav {
     width: 100%;
@@ -152,28 +149,47 @@ body {
 .main__nav-2-icono {
     height: 21px;
 }
-.main__section{
+.main__section {
     width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 60px 30px;
-    gap: 60px 0;
-}
-.main__article {
-    box-shadow: 0 0 5px #f71;
-    background-color: #fff;
-    border-radius: 20px;
-    color:#f71;
-    min-height: 330px;
-    max-width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 30px 10px;
+}
+.main__section-details {
+    border: solid 2px #fa19;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+.main__section-details-summary {
+    list-style: none;
+}
+.main__section-details-summary h2 {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #f71;
+}
+.main__section-details-container {
+    border-top: dotted 1px #fa1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+.main__article {
+    box-shadow: 0 0 5px #f715;
+    background-color: #fff;
+    border-radius: 10px;
+    color:#f71;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .main__article header h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     padding: 10px;
 }
@@ -189,7 +205,7 @@ body {
 .main__article-summary {
     list-style: none;
     border-radius: 5px;
-    height: 130px;
+    height: 100%;
 }
 .main__article-summary-img {
     max-height: 100%;
@@ -200,25 +216,26 @@ body {
     box-shadow: 0 0 5px #f71;
     border-radius: 20px;
     position: absolute;
-    max-width: 330px;
-    max-height: 330px;
+    max-width: 316px;
+    min-height: 250px;
     top: 100px;
     z-index: 1;
 }
 .main__article-details-img-front {   
-    left: -35px;
+    left: -10px;
 }
 .main__article-details-img-back {
     left: -148px;
 }
-.main__article p {
-    font-size: 16px;
-    text-align: center;
-    padding: 5px 10px 0 10px;
-}
 .main__article footer {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.main__article-footer-price {
+    font-size: 16px;
+    padding: 3px 10px;
+    text-align: center;
 }
 
 
