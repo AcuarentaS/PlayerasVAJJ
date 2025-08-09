@@ -154,6 +154,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px 10px;
+    gap: 10px;
 }
 .main__section-details {
     border: solid 2px #fa19;
